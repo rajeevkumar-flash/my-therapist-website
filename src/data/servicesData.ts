@@ -11,7 +11,7 @@ export const detailedServices = [
       },
       {
         heading: "How Dr. Blake helps:",
-        text: "Dr. Blake uses evidence-based approaches like Cognitive Behavioral Therapy (CBT) and mindfulness to help you understand the root of your anxiety. She provides practical tools to challenge negative thought patterns and develop effective coping strategies, empowering you to regain control and find inner calm. Sessions are personalized to your specific stressors and goals."
+        text: "I use evidence-based approaches like Cognitive Behavioral Therapy (CBT) and mindfulness to help you understand the root of your anxiety. I provide practical tools to challenge negative thought patterns and develop effective coping strategies, so you can regain control and find a greater sense of calm. Each session is personalized to your specific stressors and goals."
       }
     ],
     successRate: 90,
@@ -29,7 +29,7 @@ export const detailedServices = [
       },
       {
         heading: "How Dr. Blake helps:",
-        text: "Dr. Blake works with individuals and couples to improve communication skills, foster empathy, and develop healthier conflict-resolution strategies. She provides a safe space to explore difficult emotions and patterns, helping you and your loved one build a stronger foundation based on mutual respect and understanding."
+        text: "I work with individuals and couples to improve communication skills, foster empathy, and develop healthier conflict-resolution strategies. I provide a safe space to explore difficult emotions and patterns, helping you and your loved one build a stronger foundation based on mutual respect and understanding."
       }
     ],
     successRate: 85,
@@ -47,7 +47,7 @@ export const detailedServices = [
       },
       {
         heading: "How Dr. Blake helps:",
-        text: "Utilizing a trauma-informed approach, Dr. Blake creates a supportive and non-judgmental environment for you to process your experiences. She integrates techniques from various therapies to help you regulate emotions, reduce distressing symptoms, and gradually reclaim your sense of self and safety. The goal is to help you build resilience and move forward."
+        text: "Utilizing a trauma-informed approach, I create a supportive and non-judgmental space where you can process your experiences at your own pace. I integrate techniques from various therapies to help you regulate emotions, reduce distressing symptoms, and gradually reclaim your sense of self and safety. My goal is to help you build resilience and move forward with confidence."
       }
     ],
     successRate: 95,
