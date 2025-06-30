@@ -15,7 +15,7 @@ export const drBlakeData = {
     {
       name: 'Relationship Counseling',
       description: 'Strengthen your connections and foster healthier interactions with loved ones. Through guided sessions, improve communication, resolve conflicts, and build deeper, more fulfilling relationships.',
-      image: '/images/relationship.jpg'
+      image: '/images/Relationship.jpg'
     },
     {
       name: 'Trauma Recovery',
