@@ -21,7 +21,7 @@ export const detailedServices = [
     title: 'Relationship Counseling',
     slug: 'relationship-counseling',
     shortDescription: 'Strengthen your connections and foster healthier interactions with loved ones. Through guided sessions, improve communication, resolve conflicts, and build deeper, more fulfilling relationships.',
-    image: '/images/relationship.jpg',
+    image: '/images/Relationship.jpg',
     detailedDescription: [
       {
         heading: "How it impacts daily life:",
