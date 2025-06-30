@@ -13,7 +13,7 @@ export default function Footer() {
 
         <div className="text-sm text-gray-300 mb-4 space-y-1">
           
-          <p>Globally Available Online, Based in Visalia, CA</p>
+          <p>Globally Available Online, Based in Los Angeles, CA</p>
           <p className="flex items-center justify-center">
             <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.954.686l1.258 3.14a1 1 0 00.954.686h3.693a1 1 0 00.954-.686l-1.258-3.14A1 1 0 0118.72 3H22a2 2 0 012 2v14a2 2 0 01-2 2h-1.28a1 1 0 01-.954-.686l-1.258-3.14a1 1 0 00-.954-.686h-3.693a1 1 0 00-.954.686l-1.258 3.14A1 1 0 015.28 21H2a2 2 0 01-2-2V5z" /></svg>
             {drBlakeData.phone}
