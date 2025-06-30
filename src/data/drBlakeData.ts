@@ -5,7 +5,8 @@ export const drBlakeData = {
   phone: '(323) 555-0192',
   email: 'serena@blakepsychology.com',
   experience: '8 years of practice, 500+ sessions',
-  bio: `Dr. Serena Blake is a licensed clinical psychologist (PsyD) based in Los Angeles, CA, with eight years of experience and over 500 client sessions. She blends evidence-based approaches—like cognitive-behavioral therapy and mindfulness—with compassionate, personalized care to help you overcome anxiety, strengthen relationships, and heal from trauma. Whether you meet in her Maplewood Drive office or connect virtually via Zoom, Dr. Blake is committed to creating a safe, supportive space for you to thrive.`,
+  bio: `Taking care of our mental and emotional health isn’t always easy. I believe therapy offers a dedicated space to slow down, reflect, and grow with support. I’m Dr. Serena Blake, a licensed clinical psychologist based in Los Angeles. Over the past eight years, I’ve supported individuals and couples through challenges like anxiety, trauma, and relationship issues. My approach blends practical tools from CBT and mindfulness with a compassionate, personalized style. Whether in-person or online, I aim to create a safe space where you feel heard, supported, and empowered.`,
+
   services: [
     {
       name: 'Anxiety & Stress Management',
