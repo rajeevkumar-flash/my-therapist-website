@@ -1,3 +1,5 @@
+
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BlogSection from '@/components/BlogSection'; // Import the new component

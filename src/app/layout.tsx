@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import AOSInitializer from '@/components/AOSInitializer'; // Correct import path for AOSInitializer
+import AOSInitializer from "@/components/AOSInitializer";
+import Header from "@/components/Header"; // client component
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -20,16 +20,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground w-full min-h-screen overflow-x-hidden`}
       >
-        <AOSInitializer /> {/* <-- RENDER THE AOSInitializer HERE */}
-        {children}
+        <AOSInitializer />
+        <Header /> {/* This is fine; it's a client component inside a server one */}
+        <main className="pt-[160px] px-4 w-full"> {/* ✅ Offset for fixed header */}
+          {children}
+        </main>
       </body>
     </html>
   );

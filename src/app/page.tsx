@@ -1,11 +1,16 @@
 'use client';
 
 import Image from 'next/image';
+import Link  from 'next/link';
 import { useState } from 'react';
 import { drBlakeData } from '@/data/drBlakeData';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Link from 'next/link';
+import ServicesSection from '@/components/ServicesSection';
+import drBlakeImage from '@/../public/images/dr-blake.jpg';
+
+
+
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -141,11 +146,12 @@ export default function Home() {
             <div className="md:w-1/2 flex justify-center">
               <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-white">
                 <Image
-                  src="/images/dr-blake.jpg"
+                  src={drBlakeImage}
                   alt="Dr. Serena Blake's headshot"
                   layout="fill"
                   objectFit="cover"
                   className="rounded-full"
+                  placeholder='blur'
                 />
               </div>
             </div>
@@ -153,17 +159,9 @@ export default function Home() {
             {/* Bio Content */}
             <div className="md:w-1/2 text-center md:text-left">
               <h2 className="text-4xl font-bold text-gray-800 mb-6">About {drBlakeData.name}</h2>
-              <div className="text-lg text-gray-700 space-y-4 leading-relaxed">
-                <p>
-                  Dr. Serena Blake is a licensed clinical psychologist (PsyD) based in Los Angeles, CA, with eight years of experience and over 500 client sessions.
-                </p>
-                <p>
-                  She blends evidence-based approaches—like cognitive-behavioral therapy and mindfulness—with compassionate, personalized care to help you overcome anxiety, strengthen relationships, and heal from trauma.
-                </p>
-                <p>
-                  Whether you meet in her Maplewood Drive office or connect virtually via Zoom, Dr. Blake is committed to creating a safe, supportive space for you to thrive.
-                </p>
-              </div>
+              <p className="text-lg text-gray-700 space-y-4 leading-relaxed">
+                {drBlakeData.bio}
+              </p>
                <div className="mt-8 text-gray-600 text-base space-y-2">
                 <p>
                   <span className="font-bold text-black">Name & Title:</span> {drBlakeData.name}, {drBlakeData.title}
@@ -180,37 +178,7 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="py-20 bg-white px-4" data-aos="fade-up" data-aos-delay="100" >
-          <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-gray-800 mb-12">Services & Specialties</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-              {drBlakeData.services.map((service, index) => (
-                <div key={index} className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
-                  <div className="relative w-full h-60">
-                    <Image
-                      src={service.image}
-                      alt={service.name}
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-t-xl"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-2xl font-semibold text-blue-800 mb-3">{service.name}</h3>
-                    <p className="text-gray-700 text-base leading-relaxed">
-                      {service.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div id="rates" className="mt-16 text-lg text-gray-800 bg-blue-50 p-8 rounded-xl shadow-inner max-w-2xl mx-auto">
-              <h3 className="text-2xl font-semibold text-blue-900 mb-4">Session Fees:</h3>
-              <p className="mb-2">{drBlakeData.sessionFees.individual}</p>
-              <p>{drBlakeData.sessionFees.couples}</p>
-            </div>
-          </div>
-        </section>
+       <ServicesSection/>
 
         {/* FAQ Section */}
         <section id="faq" className="py-20 bg-teal-50 px-4">

@@ -10,17 +10,17 @@ export const drBlakeData = {
     {
       name: 'Anxiety & Stress Management',
       description: 'Navigate the complexities of modern life with proven strategies to manage anxiety and reduce stress. Learn coping mechanisms and build resilience for a calmer, more balanced existence.',
-      image: '/images/Stress Management.jpg'
+      image: '/images/stress-management.jpg' 
     },
     {
       name: 'Relationship Counseling',
       description: 'Strengthen your connections and foster healthier interactions with loved ones. Through guided sessions, improve communication, resolve conflicts, and build deeper, more fulfilling relationships.',
-      image: '/images/Relationship.jpg'
+      image: '/images/relationship.jpg'
     },
     {
       name: 'Trauma Recovery',
       description: 'Heal from past experiences and move towards a more peaceful future. Dr. Blake offers a compassionate and evidence-based approach to process trauma and reclaim your sense of safety and well-being.',
-      image: '/images/Turma.jpg'
+      image: '/images/trauma.jpg'
     },
   ],
   sessionFees: {

@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import { detailedServices } from '@/data/servicesData';
 import Image from 'next/image';
 
+
 // Pre-render static params for each service
 export async function generateStaticParams() {
   return detailedServices.map(service => ({
@@ -29,7 +30,8 @@ export default async function ServiceDetailPage({ params }: any) {
                 src={service.image}
                 alt={service.title}
                 fill
-                className="object-cover opacity-70"
+                className="object-cover"
+                priority
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                 <h1 className="text-6xl font-bold text-white drop-shadow-lg">{service.title}</h1>

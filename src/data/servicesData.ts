@@ -1,14 +1,9 @@
-
-import anxietyImage from '../../public/images/Stress Management.jpg'; // Assuming you have these images in the public folder
-import relationshipImage from '../../public/images/Relationship.jpg';
-import traumaImage from '../../public/images/Turma.jpg';
-
 export const detailedServices = [
   {
     title: 'Anxiety & Stress Management',
     slug: 'anxiety-stress-management',
     shortDescription: 'Navigate the complexities of modern life with proven strategies to manage anxiety and reduce stress. Learn coping mechanisms and build resilience for a calmer, more balanced existence.',
-    image: anxietyImage,
+    image: '/images/stress-management.jpg',
     detailedDescription: [
       {
         heading: "How it impacts daily life:",
@@ -19,14 +14,14 @@ export const detailedServices = [
         text: "Dr. Blake uses evidence-based approaches like Cognitive Behavioral Therapy (CBT) and mindfulness to help you understand the root of your anxiety. She provides practical tools to challenge negative thought patterns and develop effective coping strategies, empowering you to regain control and find inner calm. Sessions are personalized to your specific stressors and goals."
       }
     ],
-    successRate: 90, // In percentage
+    successRate: 90,
     casesTaken: 350,
   },
   {
     title: 'Relationship Counseling',
     slug: 'relationship-counseling',
     shortDescription: 'Strengthen your connections and foster healthier interactions with loved ones. Through guided sessions, improve communication, resolve conflicts, and build deeper, more fulfilling relationships.',
-    image: relationshipImage,
+    image: '/images/relationship.jpg',
     detailedDescription: [
       {
         heading: "How it impacts daily life:",
@@ -44,7 +39,7 @@ export const detailedServices = [
     title: 'Trauma Recovery',
     slug: 'trauma-recovery',
     shortDescription: 'Heal from past experiences and move towards a more peaceful future. Dr. Blake offers a compassionate and evidence-based approach to process trauma and reclaim your sense of safety and well-being.',
-    image: traumaImage,
+    image: '/images/trauma.jpg',
     detailedDescription: [
       {
         heading: "How it impacts daily life:",
